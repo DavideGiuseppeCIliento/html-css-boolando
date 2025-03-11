@@ -1,0 +1,167 @@
+/* RESET VARIABILI GLOBALI */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f8fa;
+  font-family: "Arial", sans-serif;
+}
+
+header {
+  position: sticky;
+  color: white;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  color: inherit;
+}
+
+li {
+  display: inline-block;
+  padding: 0 10px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* LAYOUT */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+section {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1 1 0;
+}
+
+.flex-element {
+  display: flex;
+  gap: 5px;
+}
+
+.element-row-wrap {
+  flex-flow: row wrap;
+}
+
+.column-element-wrap {
+  flex-flow: column wrap;
+}
+
+/* TIPOGRAFIA */
+
+h1 {
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+/* UTILITY */
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-50 {
+  height: 100vh;
+}
+
+.h-100 {
+  height: 100vh;
+}
+
+.bgorange {
+  background-color: #fe6801;
+}
+
+.bggray {
+  background-color: #1a1a1a;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .flex-element {
+    flex-direction: column;
+  }
+}
+
+/* HEADER */
+
+header .row {
+  justify-content: space-between;
+}
+
+.col.social {
+  display: flex;
+  justify-content: end;
+}
+
+.col.logo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.col.logo img {
+  width: 30%;
+}
